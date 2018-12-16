@@ -51,4 +51,5 @@ def organize_schools(schls)
   schls.each {|sName, sObj|
     org << sObj
   }
+  org
 end
