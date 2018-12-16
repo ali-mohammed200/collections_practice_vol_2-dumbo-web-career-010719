@@ -28,10 +28,12 @@ def count_elements(arr)
   count = 0
   uniqArr = arr.uniq
   current = ""
-  uniqArr.map {|key, val|
-    {
-      key => val,
-      :count => count
+  uniqArr.map {|obj|
+    obj.each {|key, val|
+      {
+        key => val,
+        :count => count
+      }
     }
   }
 end
