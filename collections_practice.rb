@@ -41,5 +41,5 @@ def count_elements(arr)
         :count => count
       }
     }
-  }.flatten.uniq
+  }.flatten
 end
