@@ -32,7 +32,17 @@ def count_elements(arr)
   }.flatten
 end
 def merge_data(h1, h2)
-
+  mer = []
+  h2.each { |elem|
+    h1.each { |elemen|
+      elem.each {|name, statsObj|
+        if elemen[:first_name] == name
+          mer.push(elemen.merge(statsObj))
+        end
+      }
+    } 
+  }
+  mer
 end
 def find_cool(obj)
   coolObj = []
