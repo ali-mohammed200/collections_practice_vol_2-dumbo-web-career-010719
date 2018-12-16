@@ -36,6 +36,12 @@ def merge_data(h1, h2)
 end
 def find_cool(obj)
   coolObj = {}
-  obj.each{|elem| coolObj = elem}
+  obj.each{|elem| 
+    elem.each{|key, val|
+      if val == "cool"
+        coolObj = elem
+        return coolObj
+    }
+    coolObj = elem}
   coolObj
 end
