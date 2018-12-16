@@ -47,9 +47,11 @@ def find_cool(obj)
   coolObj
 end
 def organize_schools(schls)
-  org = []
+  org = {}
   schls.each {|sName, sObj|
-    org << sObj
+    sObj.map {|locKey, locVal|
+      org[locVal] << sName
+    }
   }
   org
 end
