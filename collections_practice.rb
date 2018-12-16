@@ -28,11 +28,11 @@ def count_elements(arr)
   count = 0
   uniqArr = arr.uniq
   current = ""
-  arr.map {|obj|
+  uniqArr.map {|obj|
     if (current != obj)
       current = obj
       count = 1
-    elsif current == obj && uniqArr.include?(obj)
+    elsif current == obj && arr.include?(obj)
       count += 1
     end
     obj.map {|key, val|
