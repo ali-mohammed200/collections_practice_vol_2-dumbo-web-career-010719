@@ -32,5 +32,5 @@ def count_elements(arr)
   }.flatten
 end
 def merge_data(h1, h2)
-  h1.merge(h2)
+  
 end
