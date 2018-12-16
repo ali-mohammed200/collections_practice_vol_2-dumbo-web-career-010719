@@ -28,7 +28,7 @@ def count_elements(arr)
   count = 0
   uniqArr = arr.uniq
   current = ""
-  uniqArr.each {|obj|
+  uniqArr.map {|obj|
     obj.map {|key, val|
       {
         key => val,
