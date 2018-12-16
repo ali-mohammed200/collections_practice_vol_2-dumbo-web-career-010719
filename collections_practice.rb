@@ -31,6 +31,5 @@ def count_elements(arr)
     }
   }.flatten
 end
-def merge_data
-  
+def merge_data(h1, h2)
 end
