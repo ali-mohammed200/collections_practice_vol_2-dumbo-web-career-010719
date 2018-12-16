@@ -40,7 +40,7 @@ def merge_data(h1, h2)
           mer.push(elemen.merge(statsObj))
         end
       }
-    } 
+    }
   }
   mer
 end
