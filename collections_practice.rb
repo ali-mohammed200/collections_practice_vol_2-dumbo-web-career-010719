@@ -46,3 +46,6 @@ def find_cool(obj)
   }
   coolObj
 end
+def organize_schools(schls)
+  
+end
