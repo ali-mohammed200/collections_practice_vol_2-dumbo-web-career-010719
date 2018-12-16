@@ -31,9 +31,9 @@ def count_elements(arr)
   uniqArr.map {|obj|
     if (current != obj)
       current = obj
-      count = 1
-    elsif current == obj && arr.include?(obj)
-      count += 1
+      count = arr.find_all{|i| i == obj}.length
+      #count = 1
+
     end
     obj.map {|key, val|
       {
