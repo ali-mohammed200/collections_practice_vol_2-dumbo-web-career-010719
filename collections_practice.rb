@@ -41,6 +41,7 @@ def find_cool(obj)
       if val == "cool"
         coolObj = elem
         return coolObj
+      end
     }
   }
   coolObj
