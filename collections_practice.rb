@@ -50,6 +50,7 @@ def organize_schools(schls)
   org = {}
   schls.each {|sName, sObj|
     sObj.map {|locKey, locVal|
+      org[locVal] = []
       org[locVal] << sName
     }
   }
