@@ -15,16 +15,6 @@ def remove_non_strings(arr)
   arr.select { |e| e.class == String }
 end
 def count_elements(arr)
-   #{:count => arr.count(t), t}}
-  #arr.uniq.map{|t| [t,arr.count(t)]}.to_h
-  #while i < uniqArr.length
-  #arr.each{|obj|
-  #  if uniqArr[i] == obj
-  #    count += 1
-  #    uniqArr[:count] = count
-  #  end
-  #}
-  #i += 1
   count = 0
   uniqArr = arr.uniq
   current = ""
@@ -32,8 +22,6 @@ def count_elements(arr)
     if (current != obj)
       current = obj
       count = arr.find_all{|i| i == obj}.length
-      #count = 1
-
     end
     obj.map {|key, val|
       {
