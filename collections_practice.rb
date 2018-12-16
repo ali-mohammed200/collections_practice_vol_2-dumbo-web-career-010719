@@ -32,5 +32,9 @@ def count_elements(arr)
   }.flatten
 end
 def merge_data(h1, h2)
-  
+
+end
+def find_cool(obj)
+  coolObj = {}
+  obj.each{|elem| coolObj = elem}
 end
