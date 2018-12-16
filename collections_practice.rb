@@ -37,4 +37,5 @@ end
 def find_cool(obj)
   coolObj = {}
   obj.each{|elem| coolObj = elem}
+  coolObj
 end
