@@ -35,5 +35,5 @@ def count_elements(arr)
         :count => count
       }
     }
-  }
+  }.flatten
 end
