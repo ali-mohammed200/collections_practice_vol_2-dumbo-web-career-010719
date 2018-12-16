@@ -29,13 +29,6 @@ def count_elements(arr)
   uniqArr = arr.uniq
   current = ""
   arr.map {|obj|
-    if (obj != current)
-      current = obj
-      count = 1
-      obj[:count] = count;
-    elsif obj == current
-      count += 1
-      obj[:count] = count
-    end
-  }.uniq
+    {obj, obj[:count] => count}
+  }
 end
