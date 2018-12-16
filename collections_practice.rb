@@ -29,6 +29,6 @@ def count_elements(arr)
   uniqArr = arr.uniq
   current = ""
   uniqArr.map {|key, val|
-    obj[:count] = count
+    [:count] = count
   }
 end
